@@ -4,7 +4,8 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
-
+# startup virtualenv-burrito
+. $HOME/.venvburrito/startup.sh
 #
 # Browser
 #
@@ -72,3 +73,8 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+alias ehi='cd ~/dev/EventHi/'
+alias chrome="open -a 'Google Chrome'"
+alias ehi-lp='cd ~/dev/LandingPage/'
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
